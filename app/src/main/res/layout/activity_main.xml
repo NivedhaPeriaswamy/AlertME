@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nivi.alertme.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Source:"
+        android:id="@+id/tv1"
+        android:layout_marginTop="67dp"
+        android:layout_marginLeft="100dp"
+        android:textSize="20dp" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="   source   "
+        android:gravity="center"
+        android:layout_alignTop="@+id/tv1"
+        android:layout_alignStart="@+id/button" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destination:"
+        android:id="@+id/tv2"
+        android:layout_below="@+id/editText"
+        android:layout_alignEnd="@+id/tv1"
+        android:textSize="20dp" />
+    <EditText
+        android:hint="destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:gravity="center"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="start "
+        android:gravity="center"
+        android:layout_below="@+id/editText2"
+        android:layout_toEndOf="@+id/tv2" />
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nivi.alertme.DetailsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="source : "
+        android:id="@+id/source"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/cur_location"
+        android:textSize="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cur_location"
+        android:layout_below="@+id/source"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/source_gn"
+        android:layout_alignTop="@+id/source"
+        android:layout_alignStart="@+id/cur_location"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destination : "
+        android:id="@+id/dest"
+        android:layout_below="@+id/source"
+        android:layout_alignEnd="@+id/source"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dest_gn"
+        android:layout_below="@+id/source_gn"
+        android:layout_alignStart="@+id/cur_location"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Location : "
+        android:id="@+id/cur_loc"
+        android:layout_below="@+id/dest"
+        android:layout_alignEnd="@+id/dest"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cur_loc_gn"
+        android:layout_below="@+id/dest"
+        android:layout_toEndOf="@+id/cur_loc"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remaining Distance : "
+        android:id="@+id/remain_dist"
+        android:layout_below="@+id/cur_loc"
+        android:layout_alignEnd="@+id/cur_loc"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/remain_dist_calc"
+        android:layout_below="@+id/cur_loc_gn"
+        android:layout_toEndOf="@+id/remain_dist"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Travel Time : "
+        android:id="@+id/time"
+        android:layout_below="@+id/remain_dist"
+        android:layout_alignEnd="@+id/cur_loc"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time_calc"
+        android:layout_below="@+id/remain_dist"
+        android:layout_toEndOf="@+id/time"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View in Map"
+        android:id="@+id/button2"
+        android:layout_below="@+id/time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp" />
+
+</RelativeLayout>
